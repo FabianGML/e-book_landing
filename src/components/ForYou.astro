@@ -1,0 +1,100 @@
+---
+
+---
+
+<section class="for-you">
+    <div class="container">
+        <h2 class="section-title">💫 Este ebook es para ti si…</h2>
+        <div class="for-you-grid">
+            <div class="for-you-card">
+                <div class="icon">🎯</div>
+                <p>Quieres trabajar rizos sin miedo.</p>
+            </div>
+
+            <div class="for-you-card">
+                <div class="icon">⭐</div>
+                <p>Quieres elevar tu técnica y diferenciarte.</p>
+            </div>
+
+            <div class="for-you-card">
+                <div class="icon">💰</div>
+                <p>Deseas cobrar mejor por tu conocimiento.</p>
+            </div>
+
+            <div class="for-you-card">
+                <div class="icon">👑</div>
+                <p>Sueñas con convertirte en experta en rizos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .for-you {
+        padding: 80px 20px;
+        background: white;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #2d3748;
+        margin-bottom: 3rem;
+    }
+
+    .for-you-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .for-you-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2.5rem 2rem;
+        border-radius: 16px;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    }
+
+    .for-you-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+    }
+
+    .icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .for-you-card p {
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .for-you {
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .for-you-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+    }
+</style>

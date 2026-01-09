@@ -1,0 +1,133 @@
+---
+const { ctaLink = "#comprar" } = Astro.props;
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">Maestría en Rizos</span>
+            </h1>
+            <p class="hero-subtitle">
+                El ebook que toda estilista necesita para trabajar el cabello
+                rizado con seguridad, precisión y resultados profesionales.
+            </p>
+            <p class="hero-description">
+                Aprenderás a leer el rizo, diagnosticar porosidad, identificar
+                patrones, diseñar cortes según densidad y aplicar terapias de
+                reconstrucción que realmente transforman el cabello.
+            </p>
+            <div class="hero-cta">
+                <a href={ctaLink} class="btn-primary"
+                    >Quiero Dominar los Rizos</a
+                >
+                <p class="hero-guarantee">
+                    ✨ Acceso inmediato • Garantía de 7 días
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .highlight {
+        display: inline-block;
+        background: linear-gradient(to right, #ffd89b, #19547b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .hero-description {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+        opacity: 0.95;
+    }
+
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        background: #ff6b6b;
+        color: white;
+        padding: 18px 48px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    }
+
+    .btn-primary:hover {
+        background: #ff5252;
+        transform: translateY(-2px);
+        box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+    }
+
+    .hero-guarantee {
+        font-size: 0.95rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            padding: 60px 20px;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            padding: 16px 36px;
+            font-size: 1.125rem;
+        }
+    }
+</style>
